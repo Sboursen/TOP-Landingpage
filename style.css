@@ -17,6 +17,10 @@ body {
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 ul {
 	list-style: none;
@@ -47,7 +51,7 @@ button {
 	color: var(--hero-main-txt-color);
 	background-color: transparent;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 24px;
 }
 .header-links {
 	color: var(--hero-secondary-txt-color);
@@ -138,4 +142,37 @@ button {
 .quote-author {
 	font-weight: bold;
 	text-align: right;
+	font-style: normal;
+}
+.hero-call-section {
+	width: 100%;
+	background-color: white;
+}
+.hero-call {
+	margin: 100px var(--hero-left-right-padding);
+	background-color: var(--hero-call-bg-color);
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5px;
+}
+.hero-call button {
+	border: 2px solid white;
+}
+.hero-call-text {
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--hero-main-txt-color);
+}
+.hero-call-subtext {
+	font-size: 18px;
+	color: var(--hero-secondary-txt-color);
+}
+.hero-footer {
+	background-color: var(--hero-dark-bg-color);
+	font-size: 18px;
+	color: var(--hero-secondary-txt-color);
+	padding: 25px;
+	text-align: center;
 }
