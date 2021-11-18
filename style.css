@@ -8,16 +8,15 @@
 	--hero-secondary-txt-color: #e5e7eb;
 	--hero-left-right-padding: 100px;
 }
-* {
-	margin: 0;
-	padding: 0;
-}
+
 body {
 	width: 100vw;
 	font-family: "Roboto", Times, serif;
 	background-color: orange;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
 ul {
 	list-style: none;
@@ -83,8 +82,60 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	color: var(--hero-secondary-txt-color);
-	width: 90%;
+	width: 500px;
+	flex-shrink: 0;
 	background-color: rgb(109, 115, 125);
+}
+
+.generals-section {
+	padding: 0px var(--hero-left-right-padding) 100px;
+	background-color: white;
+}
+.generals-section-title {
+	background-color: transparent;
+	color: var(--hero-quote-txt-color);
+	text-align: center;
+	padding: 50px;
+	font-size: 36px;
+	font-weight: bold;
+}
+.generals {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.generals > div {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.generals > div > div {
+	height: 150px;
+	width: 150px;
+	border: 3px solid #3882f6;
+	border-radius: 8px;
+}
+.generals > div > p {
+	text-align: center;
+	width: 150px;
+}
+
+.hero-quote {
+	background-color: var(--hero-quote-bg-color);
+	padding: 100px var(--hero-left-right-padding);
+	font-size: 36px;
+	font-weight: lighter;
+	font-style: italic;
+}
+.quote {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.quote-author {
+	font-weight: bold;
+	text-align: right;
 }
